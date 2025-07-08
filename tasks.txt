@@ -3,6 +3,4 @@
 - Tasks will appear on your desktop
 - Use # for headers and - for tasks
 
-
-# Daily ones
-- Exercise on intervals
+## hello wrold

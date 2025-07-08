@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  task-wallpaper:
+    build: .
+    container_name: dynamic-task-wallpaper
+    volumes:
+      - ./tasks:/app/tasks
+      - ./output:/app/output
+    environment:
+      - DISPLAY=${DISPLAY}
+    # For X11 forwarding on Windows (requires additional setup)
+    # volumes:
+    #   - /tmp/.X11-unix:/tmp/.X11-unix
+    restart: unless-stopped
+    
+  # Optional: Web interface service (future feature)
+  # web-interface:
+  #   build: .
+  #   command: python web_interface.py
+  #   ports:
+  #     - "8000:8000"
+  #   depends_on:
+  #     - task-wallpaper
