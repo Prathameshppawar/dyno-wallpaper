@@ -1,0 +1,8 @@
+# My Tasks
+- Edit this file to update your wallpaper
+- Tasks will appear on your desktop
+- Use # for headers and - for tasks
+
+
+# Daily ones
+- Exercise on intervals
